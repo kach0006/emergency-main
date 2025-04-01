@@ -26,11 +26,16 @@
 .daily_text .cta_btn {
   justify-self: left;
 }
-.daily_img {
-  width: 100%;
+.daily_card img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  border: 1px solid var(--header-background-color);
 }
+
+/*.daily_card img {
+  width: 100px;
+}*/
+
 .news_card {
   background-color: var(--article-background-color);
   display: grid;
@@ -53,7 +58,7 @@
   margin: 0 0 1rem 0;
 }
 .news_card:first-child:before {
-  content: "BREAKING NEWS";
+  content: "NYHEDER";
   background-color: var(--headline-bg-color-inverted);
   color: var(--headline-color-inverted);
   font-family: var(--headline-font);

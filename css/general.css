@@ -38,9 +38,14 @@ ul,
 
 body {
   font-family: var(--default-font);
+  font-size: var(--default-font-size);
   color: var(--primary-font-color);
-  background-color: var(--primary-bg-color);
+  /* background-color: var(--primary-bg-color); */
+  background-image: url(/img/greypaper.webp);
+  background-size: 100%;
+  background-repeat: repeat;
 }
+
 header,
 footer {
   background-color: var(--header-background-color);
@@ -58,11 +63,30 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #main-disclamer img {
-  height: 100px;
+  height: 160px;
+  margin-right: 1rem;
+}
+
+.main-disclamer-text {
+  margin: auto;
+}
+
+.rotate {
+  animation: rotateElement 5s linear infinite;
+}
+
+@keyframes rotateElement {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #main-disclamer p {
@@ -110,6 +134,10 @@ main > h1 {
   width: calc(80% - 6rem);
 }
 
+.highlight {
+  color: var(--headline-color-inverted);
+}
+
 /* NAVIGATION STRUCTURES */
 header > nav {
   height: 100%;
@@ -152,12 +180,36 @@ header nav li a {
 }
 header > nav li > a:after {
   content: " \2192";
+  color: var(--logotype-color);
 }
-nav a:hover {
-  color: var(--hover-color);
+.menu a:hover {
+  background-color: var(--hover-background-color);
+  transition-duration: 1.5s;
 }
 nav a:active {
   color: var(--active-color);
+}
+
+.news_card img {
+  width: 15vw;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.news_card:nth-of-type(2) {
+  border-top: 0.1rem solid var(--headline-bg-color-inverted);
+  border-bottom: 0.1rem solid var(--headline-bg-color-inverted);
+}
+
+/* INFOGRAPHIC SPECIAL */
+
+#default-info-text {
+  font-size: var(--bodytext-size);
+}
+
+.info-graphic {
+  padding: 0;
 }
 
 /* FOOTER */
@@ -166,7 +218,9 @@ footer a {
 }
 .yellow,
 .green {
-  padding: 1.5rem 1rem 0.5rem 1rem;
+  padding: 1rem;
+  color: var(--bodytext-color-inverted);
+  font-size: var(--bodytext-size);
 }
 .yellow {
   background-color: var(--info-bg-color-yellow);

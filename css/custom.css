@@ -23,6 +23,7 @@
   /* Links */
   --link-color: #84888e; /* used */
   --hover-color: #f9fcfe; /* used */
+  --hover-background-color: #00ff00; /*used */
   --active-color: #f52727; /* used */
 
   /* From styletile */
@@ -30,11 +31,13 @@
   /* Fonts */
   --logotype-font: "MetalMania", serif;
   --headline-font: "Sen", sans-serif;
+  --default-font: "Alegreya", serif;
   --body-font: "Alegreya", serif;
   --link-font: "Sen", sans-serif;
   --secondary-headline-font: "Caveat", sans-serif;
 
   /* Text sizes */
+  --default-font-size: 1rem;
   --logotype-size: 1.5rem;
   --headline1-size: 2rem;
   --headline2-size: 1.5rem;
@@ -50,7 +53,7 @@
   --headline-color: #bbc3ca;
   --headline-color-inverted: #ffff7f;
   --bodytext-color: #575c61;
-  --bodytext-color-inverted: #f9fcfe;
+  --bodytext-color-inverted: #f8f8f8;
   --cta-text-color: #bbc3ca;
   --cta-text-color-inverted: #bbc3ca;
   --followup-text-color: #0d0d0d;
@@ -64,11 +67,11 @@
   --header-background-color: #575757;
   --disclamer-background-color: #0d0d0d;
   --article-background-color: #f8f8f8;
-  --news-background-color: #dbdde3;
-  --news-background-color-inverted: #eeebe9;
-  --info-background-color: #dbdde3;
+  --news-background-color: #f8f8f8;
+  --news-background-color-inverted: #ffff7f;
+  --info-background-color: #f8f8f8;
   --headline-bg-color: #dbdde3;
-  --headline-bg-color-alert: #dbdde3;
+  --headline-bg-color-alert: #0d0d0d;
   --headline-bg-color-inverted: #ec2b8c;
   --bodytext-bg-color: #dbdde3;
   --bodytext-bg-color-inverted: #dbdde3;
@@ -84,6 +87,6 @@
   --form-submit-bg-color-inverted: #dbdde3;
 
   /* Info-boxes */
-  --info-bg-color-yellow: #d6d5ce;
-  --info-bg-color-green: #a6a6a0;
+  --info-bg-color-yellow: #575757;
+  --info-bg-color-green: #0d0d0d;
 }

@@ -1,71 +1,57 @@
-document.querySelector("#infobutton1-default").addEventListener("mouseover", onInfobutton1);
+document.querySelector("#infobutton1").addEventListener("mouseover", onInfoButton1);
+document.querySelector("#infobutton2").addEventListener("mouseover", onInfoButton2);
+document.querySelector("#infobutton3").addEventListener("mouseover", onInfoButton3);
 
-function onInfobutton1() {
-  console.log("Mouse over");
-  document.querySelector("#infobutton1background").style.fill = "#fff";
-  document.querySelector("#infobutton1background").style.stroke = "#fff";
-  document.querySelector("#infobutton1text").style.fill = "#ec2b8c";
-  document.querySelector("#infobutton1dot").style.fill = "#ec2b8c";
-  document.querySelector(".info-text > h2").textContent = "OMVENDTE KORS";
+function onInfoButton1() {
+  console.log("Mouse over 1");
+  document.querySelector("#infobutton1-bg").style.fill = "#ffffff";
+  document.querySelector("#infobutton1-text").style.fill = "#ec2b8c";
+  document.querySelector("#infobutton1-dot").style.fill = "#ec2b8c";
+  document.querySelector(".info-text > h2").textContent = "Omvendte kors";
+  document.querySelector("#infobutton1-dot").style.fill = "#ec2b8c";
 }
 
-document.querySelector("#infobutton1-default").addEventListener("mouseout", offInfobutton1);
+function onInfoButton2() {
+  console.log("Mouse over 2");
+  document.querySelector("#infobutton2-bg").style.fill = "#ffffff";
+  document.querySelector("#infobutton2-text").style.fill = "#ec2b8c";
+  document.querySelector("#infobutton2-dot").style.fill = "#ec2b8c";
+  document.querySelector(".info-text > h2").textContent = "Stirren efter sengetid";
+}
 
-function offInfobutton1() {
+function onInfoButton3() {
+  console.log("Mouse over 3");
+  document.querySelector("#infobutton3-bg").style.fill = "#ffffff";
+  document.querySelector("#infobutton3-text").style.fill = "#ec2b8c";
+  document.querySelector("#infobutton3-dot").style.fill = "#ec2b8c";
+  document.querySelector(".info-text > h2").textContent = "Ny kutte";
+}
+
+document.querySelector("#infobutton1").addEventListener("mouseout", mouseOut);
+document.querySelector("#infobutton2").addEventListener("mouseout", mouseOut);
+document.querySelector("#infobutton3").addEventListener("mouseout", mouseOut);
+
+function mouseOut() {
   console.log("Mouse out");
-  document.querySelector("#infobutton1background").style.fill = "#ec2b8c";
-  document.querySelector("#infobutton1background").style.stroke = "#ec2b8c";
-  document.querySelector("#infobutton1text").style.fill = "#fff";
-  document.querySelector("#infobutton1dot").style.fill = "#fff";
-  document.querySelector(".info-text > h2").textContent = "Overskrift";
+  document.querySelector(".info-text > h2").textContent = "Sådan ved du, at han er besat";
+  document.querySelector("#default-info-text").innerHTML =
+    "Er din kæreste blevet besat af en dæmon? I en rundspørge blandt medlemmer af Okkultiveret Univers gættede mindst én på, at dæmonisk besættelse rammer flere husstande, end man skulle tro.<br> <br> Vi har samlet de tre mest almindelige tegn på, at din kæreste er offer for en dæmonisk besættelse, så du kan danne dig et overblik.<br> <br> Klik eller hold musen over tallene for at læse mere.";
+
+  document.querySelector("#infobutton1-bg").style.fill = "#ec2b8c";
+  document.querySelector("#infobutton1-text").style.fill = "#ffffff";
+  document.querySelector("#infobutton1-dot").style.fill = "#ffffff";
+  document.querySelector("#infobutton2-bg").style.fill = "#ec2b8c";
+  document.querySelector("#infobutton2-text").style.fill = "#ffffff";
+  document.querySelector("#infobutton2-dot").style.fill = "#ffffff";
+  document.querySelector("#infobutton3-bg").style.fill = "#ec2b8c";
+  document.querySelector("#infobutton3-text").style.fill = "#ffffff";
+  document.querySelector("#infobutton3-dot").style.fill = "#ffffff";
 }
 
-document.querySelector("#infobutton2-default").addEventListener("mouseover", onInfobutton2);
-
-function onInfobutton2() {
-  console.log("Mouse over");
-  document.querySelector("#infobutton2background").style.fill = "#fff";
-  document.querySelector("#infobutton2background").style.stroke = "#fff";
-  document.querySelector("#infobutton2text").style.fill = "#ec2b8c";
-  document.querySelector("#infobutton2dot").style.fill = "#ec2b8c";
-  document.querySelector(".info-text > h2").textContent = "SAMME TID HVER NAT";
-}
-
-document.querySelector("#infobutton2-default").addEventListener("mouseout", offInfobutton2);
-
-function offInfobutton2() {
+/*function resetInfoBox() {
   console.log("Mouse out");
-  document.querySelector("#infobutton2background").style.fill = "#ec2b8c";
-  document.querySelector("#infobutton2background").style.stroke = "#ec2b8c";
-  document.querySelector("#infobutton2text").style.fill = "#fff";
-  document.querySelector("#infobutton2dot").style.fill = "#fff";
-  document.querySelector(".info-text > h2").textContent = "Overskrift";
-}
 
-document.querySelector("#infobutton3-default").addEventListener("mouseover", onInfobutton3);
-
-function onInfobutton3() {
-  console.log("Mouse over");
-  document.querySelector("#infobutton3background").style.fill = "#fff";
-  document.querySelector("#infobutton3background").style.stroke = "#fff";
-  document.querySelector("#infobutton3text").style.fill = "#ec2b8c";
-  document.querySelector("#infobutton3dot").style.fill = "#ec2b8c";
-  document.querySelector(".info-text > h2").textContent = "HAN GÅR KUTTEKLÆDT";
-}
-
-document.querySelector("#infobutton3-default").addEventListener("mouseout", offInfobutton3);
-
-function offInfobutton3() {
-  console.log("Mouse out");
-  document.querySelector("#infobutton3background").style.fill = "#ec2b8c";
-  document.querySelector("#infobutton3background").style.stroke = "#ec2b8c";
-  document.querySelector("#infobutton3text").style.fill = "#fff";
-  document.querySelector("#infobutton3dot").style.fill = "#fff";
-  document.querySelector(".info-text > h2").textContent = "Overskrift";
-}
-//function showInfobutton1() {
-//console.log("Mouse out");
-//document.querySelector("#infobutton1-default").style.visibility = "visible";
-
-// console.log("infobox1Info");
-// document.querySelector(".info-text > h2").textContent = "Overskrift i h2";
+  document.querySelector(".info-text > h2").textContent = "Sådan ved du, at han er besat";
+  document.querySelector(".placeholder").innerHTML =
+    "Er din kæreste blevet besat af en dæmon? I en rundspørge blandt medlemmer af Okkultiveret Univers gættede mindst én på, at dæmonisk besættelse rammer flere husstande, end man skulle tro.<br> <br> Vi har samlet de tre mest almindelige tegn på, at din kæreste er offer for en dæmonisk besættelse, så du kan danne dig et overblik.<br> <br> Klik eller hold musen over tallene for at læse mere.";
+}*/
