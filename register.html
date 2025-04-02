@@ -24,28 +24,113 @@
     <header>
       <nav>
         <div id="logotype-wrapper">
-          <a href="index.html"> LOGOTYPE </a>
+          <a href="index.html">OKKULTIVERET UNIVERS</a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a class="menuItem" href="instruction.html">Dæmonisk besættelse</a></li>
+          <li><a class="menuItem" href="index.html">Forside</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>Kontakt en eksorcist</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Rådgivning eller hjemmeeksorcisme</h2>
+          <p>Få kontakt med en eksorcist.</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <h3>Anmodning</h3>
+          <fieldset>
+            <legend name="service-request">Kontakt mig angående:</legend>
+            <input type="radio" id="advise" name="service-request" />
+            <label for="advise">Rådgivning</label>
+            <input type="radio" id="visit" name="service-request" />
+            <label for="visit">Hjemmebesøg</label>
+          </fieldset>
+
+          <h3>Kontaktoplysninger</h3>
+
+          <div class="form-title">
+            <label for="f-name">Fornavn</label>
+            </div>
+             <input type="text" id="f-name" name="fname" />
+          </div>
+
+          <div class="form-title">
+            <label for="l-name">Efternavn</label></div> <input type="text" id="l-name" name="lname" />
+          
+
+          <div class="form-title">
+            <label for="phone">Telefon</label>
+          </div>
+          <input type="tel" id="phone" name="phone" />
+          
+
+          <div class="form-title">
+            <label for="email">E-mail</label>
+          </div>
+           <input type="email" id="email" name="email" />
+          
+          <h3>Adresseoplysninger</h3>
+          <div class="form-title">
+            <label for="postal-code">Postnummer</label>
+          </div>  
+            <input type="text" maxlength="4" id="postal-code" name="postal-code" />
+          
+          <div class="form-title">
+            <label for="city">By</label></div>
+            <input type="text" id="city" name="city" />
+          
+          <div class="form-title">
+            <label for="street-address">Vej</label></div>
+            <input type="text" id="street-address" name="street-address" />
+          
+          <h3>Besættelsesforløbet</h3>
+          <p>
+            For at kunne hjælpe dig bedst muligt, vil vi bede dig beskrive besættelsesforløbet, som
+            du har oplevet det. Dine svar behøver ikke at være præcise, da vi gerne tager
+            udgangspunkt i pure gætværk.
+          </p>
+          
+            <fieldset>
+              <legend>Den besatte har udvist følgende symptomer:</legend>
+
+              <input type="checkbox" id="attitude" name="attitude" />
+              <label for="attitude">Dårlig attitude</label>
+              <input type="checkbox" id="growling" name="growling" />
+              <label for="growling">Spontan knurren</label>
+              <input type="checkbox" id="cross-turning" name="cross-turning" />
+              <label for="cross-turning">Vender kors på hovedet</label>
+              <input type="checkbox" id="latin" name="latin" />
+              <label for="latin">Råber på latinsk</label>
+              <input type="checkbox" id="nightly-staring" name="nightly-staring" />
+              <label for="nightly-staring">Stirrer om natten</label>
+              <input type="checkbox" id="forgot-birthday" name="forgot-birthday" />
+              <label for="forgot-birthday">Glemmer din fødselsdag</label>
+              <input type="checkbox" id="wall-crawl" name="wall-crawl" />
+              <label for="wall-crawl">Kravler på vægge</label>
+              <input type="checkbox" id="wears-cloak" name="wears-cloak" />
+              <label for="got-cloak">Går kutteklædt rundt</label>
+              <input type="checkbox" id="other-symptoms" name="other-symptoms" />
+              <label for="other-symptoms">Andet</label>
+            </fieldset>
+
+          <div class="form-title">
+          <label for="annoying-range">Hvor irriterende er den besatte på en skala fra 0-10?</label></div>
+            <input type="range" id="annoying-range" name="annoying-range" min="0" max="10" />
+
+
+          <h3>Kommentarer</h3>
+          <textarea name="comments" id="comments"></textarea>
+          <div><button>SEND ANMODNING</button></div>
+        </form>
       </section>
       <section id="form-summary">
-        <h2>Summary</h2>
+        <h2>Opsummering</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder">Indsendte oplysninger</p>
         </article>
       </section>
     </main>
