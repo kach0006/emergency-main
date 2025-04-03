@@ -1,6 +1,10 @@
-document.querySelector("#infobutton1").addEventListener("mouseover", onInfoButton1);
-document.querySelector("#infobutton2").addEventListener("mouseover", onInfoButton2);
-document.querySelector("#infobutton3").addEventListener("mouseover", onInfoButton3);
+const infoButton1 = document.querySelector("#infobutton1");
+const infoButton2 = document.querySelector("#infobutton2");
+const infoButton3 = document.querySelector("#infobutton3");
+
+infoButton1.addEventListener("mouseover", onInfoButton1);
+infoButton2.addEventListener("mouseover", onInfoButton2);
+infoButton3.addEventListener("mouseover", onInfoButton3);
 
 function onInfoButton1() {
   console.log("Mouse over 1");
@@ -27,9 +31,9 @@ function onInfoButton3() {
   document.querySelector(".info-text > h2").textContent = "Ny kutte";
 }
 
-document.querySelector("#infobutton1").addEventListener("mouseout", mouseOut);
-document.querySelector("#infobutton2").addEventListener("mouseout", mouseOut);
-document.querySelector("#infobutton3").addEventListener("mouseout", mouseOut);
+infoButton1.addEventListener("mouseout", mouseOut);
+infoButton2.addEventListener("mouseout", mouseOut);
+infoButton3.addEventListener("mouseout", mouseOut);
 
 function mouseOut() {
   console.log("Mouse out");

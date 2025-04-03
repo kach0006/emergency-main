@@ -37,7 +37,7 @@
       <h1>Kontakt en eksorcist</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Rådgivning eller hjemmeeksorcisme</h2>
+          <h2>Rådgivning og hjemmeeksorcismer</h2>
           <p>Få kontakt med en eksorcist.</p>
         </article>
         <form id="webform">
@@ -53,28 +53,30 @@
           <h3>Kontaktoplysninger</h3>
 
           <div class="form-title">
-            <label for="f-name">Fornavn</label>
+            <label for="f-name">Fornavn<span class="star">*</span></label>
             </div>
-             <input type="text" id="f-name" name="fname" />
+             <input type="text" id="f-name" name="fname" minlength="1" maxlength="40" required/>
           </div>
 
           <div class="form-title">
-            <label for="l-name">Efternavn</label></div> <input type="text" id="l-name" name="lname" />
+            <label for="l-name">Efternavn<span class="star">*</span></label>
+          </div> 
+          <input type="text" id="l-name" name="lname" minlength="1" maxlength="40" />
           
 
           <div class="form-title">
-            <label for="phone">Telefon</label>
+            <label for="phone">Telefon<span class="star">*</span</label>
           </div>
-          <input type="tel" id="phone" name="phone" />
+          <input type="tel" id="phone" name="phone"  pattern="[0-9]{8}" required />
           
 
           <div class="form-title">
-            <label for="email">E-mail</label>
+            <label for="email">E-mail<span class="star">*</span></label>
           </div>
-           <input type="email" id="email" name="email" />
+           <input type="email" id="email" name="email" required />
           
           <h3>Adresseoplysninger</h3>
-          <div class="form-title">
+          <div class="form-title" >
             <label for="postal-code">Postnummer</label>
           </div>  
             <input type="text" maxlength="4" id="postal-code" name="postal-code" />
@@ -84,7 +86,7 @@
             <input type="text" id="city" name="city" />
           
           <div class="form-title">
-            <label for="street-address">Vej</label></div>
+            <label for="street-address">Adresse</label></div>
             <input type="text" id="street-address" name="street-address" />
           
           <h3>Besættelsesforløbet</h3>
@@ -94,38 +96,67 @@
             udgangspunkt i pure gætværk.
           </p>
           
-            <fieldset>
+<div class="form-title">
+  <label for="possessed-date">Hvornår bemærkede du første tegn på besættelse?</label></div>
+<input type="date" name="possessed-date" id="possessed-date" value="2025-04-01" min="1990-01-01" max="2025-12-31">
+
+
+            <fieldset class="possessed-section">
               <legend>Den besatte har udvist følgende symptomer:</legend>
 
-              <input type="checkbox" id="attitude" name="attitude" />
+              <div class="checkboxes"><input type="checkbox" id="attitude" name="attitude" />
               <label for="attitude">Dårlig attitude</label>
+            </div>
+              <div class="checkboxes">
               <input type="checkbox" id="growling" name="growling" />
               <label for="growling">Spontan knurren</label>
+            </div>
+              <div class="checkboxes">
               <input type="checkbox" id="cross-turning" name="cross-turning" />
               <label for="cross-turning">Vender kors på hovedet</label>
+            </div>
+              <div class="checkboxes">
               <input type="checkbox" id="latin" name="latin" />
               <label for="latin">Råber på latinsk</label>
+            </div>
+            <div class="checkboxes">
               <input type="checkbox" id="nightly-staring" name="nightly-staring" />
-              <label for="nightly-staring">Stirrer om natten</label>
+              <label for="nightly-staring">Stirrer om natten</label></div>
+              <div class="checkboxes">
               <input type="checkbox" id="forgot-birthday" name="forgot-birthday" />
-              <label for="forgot-birthday">Glemmer din fødselsdag</label>
+              <label for="forgot-birthday">Glemmer din fødselsdag</label></div>
+              <div class="checkboxes">
               <input type="checkbox" id="wall-crawl" name="wall-crawl" />
-              <label for="wall-crawl">Kravler på vægge</label>
+              <label for="wall-crawl">Kravler på vægge</label></div>
+              <div class="checkboxes">
               <input type="checkbox" id="wears-cloak" name="wears-cloak" />
               <label for="got-cloak">Går kutteklædt rundt</label>
+            </div>
+              <div class="checkboxes">
               <input type="checkbox" id="other-symptoms" name="other-symptoms" />
               <label for="other-symptoms">Andet</label>
+            </div>
             </fieldset>
 
-          <div class="form-title">
-          <label for="annoying-range">Hvor irriterende er den besatte på en skala fra 0-10?</label></div>
-            <input type="range" id="annoying-range" name="annoying-range" min="0" max="10" />
+          <div class="form-title possessed-section">
+          <label for="annoying-range">Hvor irriterende er den besatte på en skala fra 0-5?<span class="star">*</span></label></div>
+            <input type="range" id="annoying-range" name="annoying-range" list="markers" min="0" max="5" required/>
+            <datalist id="markers">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+    
+            </datalist>
 
 
-          <h3>Kommentarer</h3>
-          <textarea name="comments" id="comments"></textarea>
-          <div><button>SEND ANMODNING</button></div>
+          <h3>Øvrige kommentarer</h3>
+          <textarea name="comments" id="comments" maxlength="500"></textarea>
+          <button id="form-button">SEND ANMODNING</button>
         </form>
+
       </section>
       <section id="form-summary">
         <h2>Opsummering</h2>

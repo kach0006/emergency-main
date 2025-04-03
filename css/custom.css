@@ -16,8 +16,8 @@
   --danger-color: #dc3545;
 
   /* Borders */
-  --border-color: #007bff; /* used */
-  --border-color-light: #f7f5c2; /* used */
+  --border-color: #575757; /* used */
+  --border-color-light: #ffff7f; /* used */
   --border-radius: 0.25rem;
 
   /* Links */
@@ -79,12 +79,16 @@
   --cta-text-bg-color-inverted: #dbdde3;
   --followup-text-bg-color: #ffff7f;
   --followup-text-bg-color-inverted: #dbdde3;
-  --form-background-color: #c5c7ce;
+  --form-background-color: #f8f8f8;
   --form-text-color: #dbdde3;
   --formfield-background-color: #dbdde3;
   --formfield-background-color-active: #dbdde3;
   --form-submit-bg-color: #dbdde3;
   --form-submit-bg-color-inverted: #dbdde3;
+  --form-button-bg: #00ff00;
+  --form-button-text-color: #0d0d0d;
+  --form-hover-bg: #575757;
+  --form-hover-button-text-color: #00ff00;
 
   /* Info-boxes */
   --info-bg-color-yellow: #575757;
