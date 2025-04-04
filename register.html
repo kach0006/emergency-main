@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/infographic.css" />
     <link rel="stylesheet" href="css/forms.css" />
+    
 
     <title>Emergency Site</title>
   </head>
@@ -79,7 +80,8 @@
           <div class="form-title" >
             <label for="postal-code">Postnummer</label>
           </div>  
-            <input type="text" maxlength="4" id="postal-code" name="postal-code" />
+          <input type="text" maxlength="4" id="postal-code" name="postal-code" aria-describedby="postal-code-indstruction" />
+          <p class="instruction-text" id="postal-code-indstruction">Vi træffer kun klienter i Danmark. Angiv dansk postnummer eller efterlad feltet tomt.</p>
           
           <div class="form-title">
             <label for="city">By</label></div>
@@ -140,7 +142,7 @@
 
           <div class="form-title possessed-section">
           <label for="annoying-range">Hvor irriterende er den besatte på en skala fra 0-5?<span class="star">*</span></label></div>
-            <input type="range" id="annoying-range" name="annoying-range" list="markers" min="0" max="5" required/>
+            <input type="range" id="annoying-range" name="annoying-range" list="markers" min="0" max="5" value="2" required/>
             <datalist id="markers">
               <option value="0"></option>
               <option value="1"></option>
@@ -150,6 +152,7 @@
               <option value="5"></option>
     
             </datalist>
+            <span class="instruction-text" id="marker-description">0 = slet ikke irriterende<br>5 = ekstremt irriterende</span>
 
 
           <h3>Øvrige kommentarer</h3>
@@ -191,5 +194,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="js/form.js"></script>
   </body>
 </html>
