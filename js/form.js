@@ -21,6 +21,7 @@ function scaleInput() {
   }
 }
 
+const inputSummary = document.querySelector("#input-summary");
 const submitButton = document.querySelector("#form-button");
 const firstName = document.querySelector("#f-name");
 const lastName = document.querySelector("#l-name");
@@ -34,9 +35,12 @@ const annoyingRange = document.querySelector("#annoying-range");
 const checkboxArray = [];
 const commentField = document.querySelector("#comments");
 
+inputSummary.style.display = "none";
+
 submitButton.addEventListener("click", submitClick);
 
 function submitClick() {
+  inputSummary.style.display = "block";
   document.querySelector("#sum-first-name").textContent = firstName.value;
   document.querySelector("#sum-last-name").textContent = lastName.value;
   document.querySelector("#sum-phone").textContent = phone.value;
@@ -62,4 +66,14 @@ function submitClick() {
 
 function makeList(checkbox) {
   checkboxArray.push(checkbox.value);
+}
+
+const resetButton = document.querySelector("#resetButton");
+
+resetButton.addEventListener("click", resetSummary);
+
+function resetSummary() {
+  console.log("Clicked reset");
+  console.log(inputSummary);
+  inputSummary.style.display = "none";
 }

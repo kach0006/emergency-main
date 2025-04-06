@@ -56,7 +56,7 @@
           <div class="form-title">
             <label for="f-name">Fornavn<span class="star">*</span></label>
             </div>
-             <input type="text" id="f-name" name="fname" minlength="1" maxlength="40" required/>
+             <input type="text" id="f-name" name="fname" minlength="1" maxlength="40"/>
           </div>
 
           <div class="form-title">
@@ -75,7 +75,7 @@
           <div class="form-title">
             <label for="email">E-mail<span class="star">*</span></label>
           </div>
-           <input type="email" id="email" name="email" required />
+           <input type="email" id="email" name="email"/>
           
           <h3>Adresseoplysninger</h3>
           <div class="form-title" >
@@ -143,7 +143,7 @@
 
           <div class="form-title possessed-section">
           <label for="annoying-range">Hvor irriterende er den besatte på en skala fra 0-5?<span class="star">*</span></label></div>
-            <input type="range" id="annoying-range" name="annoying-range" list="markers" min="0" max="5" value="2" required/>
+            <input type="range" id="annoying-range" name="annoying-range" list="markers" min="0" max="5" value="2"/>
             <datalist id="markers">
               <option value="0"></option>
               <option value="1"></option>
@@ -164,7 +164,7 @@
       </section>
       <section id="form-summary">
         <h2>Opsummering</h2>
-        <article>
+        <article id="input-summary">
    
           <h3 class="sum-field-title">Anmodning: </h3><p id="sum-request-type"></p>
         <h3 class="sum-field-title">Fornavn: </h3><p id="sum-first-name"></p>
@@ -178,6 +178,7 @@
         <h3 class="sum-field-title">Den besattes symptomer: </h3><p id="sum-symptoms"></p>
         <h3 class="sum-field-title">Irritationsgrad: </h3><p id="sum-annoying"></p>
         <h3 class="sum-field-title">Øvrige kommentarer: </h3><p id="sum-other-comments"></p>
+        <button id="resetButton" type="reset">Nulstil</button>
       </article>
       </section>
     </main>
