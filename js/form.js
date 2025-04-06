@@ -20,3 +20,39 @@ function scaleInput() {
     console.log(possessedScale.style.accentColor);
   }
 }
+
+const submitButton = document.querySelector("#form-button");
+const firstName = document.querySelector("#f-name");
+const lastName = document.querySelector("#l-name");
+const email = document.querySelector("#email");
+const phone = document.querySelector("#phone");
+const postalCode = document.querySelector("#postal-code");
+const city = document.querySelector("#city");
+const streetAddress = document.querySelector("#street-address");
+const possessedDate = document.querySelector("#possessed-date");
+const checkboxArray = [];
+
+submitButton.addEventListener("click", submitClick);
+
+function submitClick() {
+  document.querySelector("#sum-first-name").textContent = firstName.value;
+  document.querySelector("#sum-last-name").textContent = lastName.value;
+  document.querySelector("#sum-phone").textContent = phone.value;
+  document.querySelector("#sum-email").textContent = email.value;
+  document.querySelector("#sum-postal-code").textContent = postalCode.value;
+  document.querySelector("#sum-city").textContent = city.value;
+  document.querySelector("#sum-address").textContent = streetAddress.value;
+  document.querySelector("#sum-pos-date").textContent = possessedDate.value;
+
+  const possessedCheckbox = document.querySelectorAll('input[name="symptom-checkbox"]:checked');
+  console.log(possessedCheckbox);
+
+  possessedCheckbox.forEach(makeList);
+
+  document.querySelector("#sum-symptoms").textContent = checkboxArray.join(" - ");
+}
+
+function makeList(checkbox) {
+  checkboxArray.push(checkbox.value);
+  console.log("Hej");
+}

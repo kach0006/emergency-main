@@ -106,36 +106,36 @@
             <fieldset class="possessed-section">
               <legend>Den besatte har udvist følgende symptomer:</legend>
 
-              <div class="checkboxes"><input type="checkbox" id="attitude" name="attitude" />
+              <div class="checkboxes"><input type="checkbox" id="attitude" name="symptom-checkbox" value="Dårlig attitude"/>
               <label for="attitude">Dårlig attitude</label>
             </div>
               <div class="checkboxes">
-              <input type="checkbox" id="growling" name="growling" />
+              <input type="checkbox" id="growling" name="symptom-checkbox" value="Spontan knurren/>
               <label for="growling">Spontan knurren</label>
             </div>
               <div class="checkboxes">
-              <input type="checkbox" id="cross-turning" name="cross-turning" />
+              <input type="checkbox" id="cross-turning" name="symptom-checkbox" value="Vender kors på hovedet" />
               <label for="cross-turning">Vender kors på hovedet</label>
             </div>
               <div class="checkboxes">
-              <input type="checkbox" id="latin" name="latin" />
+              <input type="checkbox" id="latin" name="symptom-checkbox" value="Råber på latinsk" />
               <label for="latin">Råber på latinsk</label>
             </div>
             <div class="checkboxes">
-              <input type="checkbox" id="nightly-staring" name="nightly-staring" />
+              <input type="checkbox" id="nightly-staring" name="symptom-checkbox" value="Stirrer om natten"/>
               <label for="nightly-staring">Stirrer om natten</label></div>
               <div class="checkboxes">
-              <input type="checkbox" id="forgot-birthday" name="forgot-birthday" />
+              <input type="checkbox" id="forgot-birthday" name="symptom-checkbox" value="Glemmer din fødselsdag"/>
               <label for="forgot-birthday">Glemmer din fødselsdag</label></div>
               <div class="checkboxes">
-              <input type="checkbox" id="wall-crawl" name="wall-crawl" />
+              <input type="checkbox" id="wall-crawl" name="symptom-checkbox" value="Kravler på vægge" />
               <label for="wall-crawl">Kravler på vægge</label></div>
               <div class="checkboxes">
-              <input type="checkbox" id="wears-cloak" name="wears-cloak" />
+              <input type="checkbox" id="wears-cloak" name="symptom-checkbox" value="Går kutteklædt rundt" />
               <label for="got-cloak">Går kutteklædt rundt</label>
             </div>
               <div class="checkboxes">
-              <input type="checkbox" id="other-symptoms" name="other-symptoms" />
+              <input type="checkbox" id="other-symptoms" name="symptom-checkbox" value="Andet"/>
               <label for="other-symptoms">Andet</label>
             </div>
             </fieldset>
@@ -157,7 +157,7 @@
 
           <h3>Øvrige kommentarer</h3>
           <textarea name="comments" id="comments" maxlength="500"></textarea>
-          <button id="form-button">SEND ANMODNING</button>
+          <button id="form-button" type="reset">SEND ANMODNING</button>
         </form>
 
       </section>
@@ -165,7 +165,19 @@
         <h2>Opsummering</h2>
         <article>
           <p class="placeholder">Indsendte oplysninger</p>
-        </article>
+          <h3 class="sum-field-title">Anmodning: </h3><p id="sum-request-type"></p>
+        <h3 class="sum-field-title">Fornavn: </h3><p id="sum-first-name"></p>
+        <h3 class="sum-field-title">Efternavn: </h3><p id="sum-last-name"></p>
+        <h3 class="sum-field-title">Telefon: </h3><p id="sum-phone"></p>
+        <h3 class="sum-field-title">E-mail: </h3><p id="sum-email"></p>
+        <h3 class="sum-field-title">Postnummer: </h3><p id="sum-postal-code"></p>
+        <h3 class="sum-field-title">By: </h3><p id="sum-city"></p>
+        <h3 class="sum-field-title">Adresse: </h3><p id="sum-address"></p>
+        <h3 class="sum-field-title">Første dato: </h3><p id="sum-pos-date"></p>
+        <h3 class="sum-field-title">Den besattes symptomer: </h3><p id="sum-symptoms"></p>
+        <h3 class="sum-field-title">Irritationsgrad (1-5): </h3><p id="sum-annoying"></p>
+        <h3 class="sum-field-title">Øvrige kommentarer: </h3><p id="sum-other-comments"></p>
+      </article>
       </section>
     </main>
     <footer>
