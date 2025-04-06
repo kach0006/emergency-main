@@ -30,6 +30,7 @@ const postalCode = document.querySelector("#postal-code");
 const city = document.querySelector("#city");
 const streetAddress = document.querySelector("#street-address");
 const possessedDate = document.querySelector("#possessed-date");
+const annoyingRange = document.querySelector("#annoying-range");
 const checkboxArray = [];
 
 submitButton.addEventListener("click", submitClick);
@@ -43,6 +44,11 @@ function submitClick() {
   document.querySelector("#sum-city").textContent = city.value;
   document.querySelector("#sum-address").textContent = streetAddress.value;
   document.querySelector("#sum-pos-date").textContent = possessedDate.value;
+  document.querySelector("#sum-annoying").textContent = annoyingRange.value + " ud af 5";
+
+  const requestType = document.querySelector('input[name="service-request"]:checked');
+  console.log(requestType.value);
+  document.querySelector("#sum-request-type").textContent = requestType.value;
 
   const possessedCheckbox = document.querySelectorAll('input[name="symptom-checkbox"]:checked');
   console.log(possessedCheckbox);
@@ -54,5 +60,4 @@ function submitClick() {
 
 function makeList(checkbox) {
   checkboxArray.push(checkbox.value);
-  console.log("Hej");
 }
