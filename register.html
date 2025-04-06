@@ -66,9 +66,10 @@
           
 
           <div class="form-title">
-            <label for="phone">Telefon<span class="star">*</span</label>
+            <label for="phone">Telefon</label>
           </div>
-          <input type="tel" id="phone" name="phone"  pattern="[0-9]{8}" required />
+          <input type="tel" id="phone" name="phone"  pattern="[0-9]{8}" maxlength="8" minlength="8" aria-describedby="phone-instruction"/>
+          <p class="instruction-text" id="phone-instruction">Angiv dansk telefonnummer eller efterlad feltet tomt.</p>
           
 
           <div class="form-title">
@@ -157,14 +158,14 @@
 
           <h3>Øvrige kommentarer</h3>
           <textarea name="comments" id="comments" maxlength="500"></textarea>
-          <button id="form-button" type="reset">SEND ANMODNING</button>
+          <button id="form-button" type="submit">Send anmodning</button>
         </form>
 
       </section>
       <section id="form-summary">
         <h2>Opsummering</h2>
         <article>
-          <p class="placeholder">Indsendte oplysninger</p>
+   
           <h3 class="sum-field-title">Anmodning: </h3><p id="sum-request-type"></p>
         <h3 class="sum-field-title">Fornavn: </h3><p id="sum-first-name"></p>
         <h3 class="sum-field-title">Efternavn: </h3><p id="sum-last-name"></p>
@@ -175,7 +176,7 @@
         <h3 class="sum-field-title">Adresse: </h3><p id="sum-address"></p>
         <h3 class="sum-field-title">Første dato: </h3><p id="sum-pos-date"></p>
         <h3 class="sum-field-title">Den besattes symptomer: </h3><p id="sum-symptoms"></p>
-        <h3 class="sum-field-title">Irritationsgrad (1-5): </h3><p id="sum-annoying"></p>
+        <h3 class="sum-field-title">Irritationsgrad: </h3><p id="sum-annoying"></p>
         <h3 class="sum-field-title">Øvrige kommentarer: </h3><p id="sum-other-comments"></p>
       </article>
       </section>

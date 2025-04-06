@@ -32,6 +32,7 @@ const streetAddress = document.querySelector("#street-address");
 const possessedDate = document.querySelector("#possessed-date");
 const annoyingRange = document.querySelector("#annoying-range");
 const checkboxArray = [];
+const commentField = document.querySelector("#comments");
 
 submitButton.addEventListener("click", submitClick);
 
@@ -45,6 +46,7 @@ function submitClick() {
   document.querySelector("#sum-address").textContent = streetAddress.value;
   document.querySelector("#sum-pos-date").textContent = possessedDate.value;
   document.querySelector("#sum-annoying").textContent = annoyingRange.value + " ud af 5";
+  document.querySelector("#sum-other-comments").textContent = commentField.value;
 
   const requestType = document.querySelector('input[name="service-request"]:checked');
   console.log(requestType.value);
