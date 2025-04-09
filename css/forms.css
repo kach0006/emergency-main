@@ -88,7 +88,7 @@ textarea {
   background-color: var(--form-button-bg);
   border-color: #ffff7f;
   padding: 1rem 1.5rem;
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
 }
 
 #form-button:after {
@@ -125,4 +125,18 @@ input[type="text"] {
 
 #marker-description {
   display: block;
+}
+
+#resetButton {
+  background-color: var(--news-background-color-inverted);
+  color: var(--form-button-text-color);
+  font-family: var(--link-font);
+  font-size: var(--default-font-size);
+
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--border-radius);
+}
+
+#resetButton:hover {
+  background-color: "white";
 }

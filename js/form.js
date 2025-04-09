@@ -53,11 +53,11 @@ function submitClick() {
   document.querySelector("#sum-other-comments").textContent = commentField.value;
 
   const requestType = document.querySelector('input[name="service-request"]:checked');
-  console.log(requestType.value);
+  //console.log(requestType.value);
   document.querySelector("#sum-request-type").textContent = requestType.value;
 
   const possessedCheckbox = document.querySelectorAll('input[name="symptom-checkbox"]:checked');
-  console.log(possessedCheckbox);
+  //console.log(possessedCheckbox);
 
   possessedCheckbox.forEach(makeList);
 
