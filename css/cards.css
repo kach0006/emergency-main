@@ -37,7 +37,7 @@
 }*/
 
 .news_card {
-  background-color: var(--article-background-color);
+  background-color: var(--news-background-color);
   display: grid;
   grid-template-rows: repeat(min-content);
   gap: 0.4rem;
@@ -46,7 +46,8 @@
   height: minmax(300px, min-content);
 }
 .news_card:nth-child(2n) {
-  background-color: var(--news-background-color-inverted);
+  background-color: var(--news-background-color);
+  color: var();
 }
 .news_card > * {
   padding: 0 1rem;
@@ -58,9 +59,9 @@
   margin: 0 0 1rem 0;
 }
 .news_card:first-child:before {
-  content: "NYHEDER";
-  background-color: var(--headline-bg-color-inverted);
-  color: var(--headline-color-inverted);
+  content: "SENESTE INDLÆG";
+  background-color: var(--disclamer-background-color);
+  color: var(--news-background-color-inverted);
   font-family: var(--headline-font);
   font-size: var(--headline3-size);
   text-align: center;
@@ -74,7 +75,9 @@
 .news_card:last-child {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
-
+.news_card img {
+  display: block;
+}
 .news_card .cta_btn {
   justify-self: center;
 }
@@ -89,7 +92,116 @@
   text-decoration: none;
   width: max-content;
 }
-.cta_btn:after {
+.cta_btn:after,
+.open-button:after {
   content: "\2192";
   margin-left: 0.5rem;
+}
+
+.cta_btn:hover,
+.open-button:hover {
+  cursor: pointer;
+  animation: bump 1s linear 3;
+  text-decoration: none;
+  /* transition: 1s ease-in-out; */
+}
+
+@keyframes bump {
+  20% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(5%);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#card1 {
+  background-image: url(../img/infographic_face.webp);
+  background-size: cover;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#card2 {
+  background-image: url(../img/contact.webp);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.open-button {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--news-button-bg-color);
+  font-family: var(--link-font);
+  font-size: var(--form-submit-size);
+  color: var(--news-button-text-color);
+  width: max-content;
+  justify-self: center;
+  margin: 1rem 1rem 0 1rem;
+
+  padding: 0.3rem 0.5rem;
+
+  background-color: var(--news-button-bg-color);
+}
+
+/* @keyframes panorama {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
+}
+
+.pan-animation {
+  animation: panorama 20s linear infinite alternate;
+} */
+
+@keyframes zoomIn {
+  from {
+    background-size: 200%;
+    background-position: 50% 50%;
+  }
+  to {
+    background-size: 400%;
+    background-position: 50% 40%;
+  }
+}
+
+.zoomInAnimation {
+  animation: zoomIn 4s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes turning {
+  25% {
+    background-position: 40% 40%;
+  }
+  50% {
+    background-position: 60% 60%;
+  }
+  75% {
+    background-position: 40% 40%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
+
+.degAnimation {
+  animation: turning 5s linear infinite;
+}
+
+.pauseAnimation {
+  animation-play-state: paused;
 }

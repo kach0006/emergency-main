@@ -61,12 +61,16 @@ function submitClick() {
 
   possessedCheckbox.forEach(makeList);
 
+  function makeList(checkbox) {
+    checkboxArray.push(checkbox.value);
+  }
+
   document.querySelector("#sum-symptoms").textContent = checkboxArray.join(" - ");
 }
 
-function makeList(checkbox) {
-  checkboxArray.push(checkbox.value);
-}
+//function makeList(checkbox) {
+//checkboxArray.push(checkbox.value);
+//}
 
 const resetButton = document.querySelector("#resetButton");
 
@@ -76,4 +80,5 @@ function resetSummary() {
   console.log("Clicked reset");
   console.log(inputSummary);
   inputSummary.style.display = "none";
+  document.querySelector("#webform").reset();
 }

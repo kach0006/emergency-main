@@ -41,7 +41,7 @@ body {
   font-size: var(--default-font-size);
   color: var(--primary-font-color);
   /* background-color: var(--primary-bg-color); */
-  background-image: url(/img/greypaper.webp);
+  background-image: var(--body-background-image);
   background-size: 100%;
   background-repeat: repeat;
 }

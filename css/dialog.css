@@ -1,0 +1,64 @@
+@keyframes slideOpen {
+  0% {
+    scale: 0 100%;
+  }
+  96% {
+    scale: 1.01 100%;
+  }
+  100% {
+    scale: 1 100%;
+  }
+}
+
+dialog {
+  position: absolute;
+  overflow: visible;
+  max-height: none;
+  animation: slideOpen 0.5s ease-out;
+  width: 40%;
+  margin: 2rem auto 2rem;
+  font-family: var(--body-font);
+  border: 1rem solid var(--border-color-light);
+  border-radius: var(--big-border-radius);
+}
+
+dialog article {
+  padding: 2rem;
+}
+dialog p,
+dialog h3,
+dialog time {
+  padding-bottom: 1rem;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(2px) grayscale(60%);
+}
+
+dialog img {
+  width: 100px;
+  float: left;
+  padding: 0 2rem 2rem 0;
+}
+
+dialog .close-button {
+  display: block;
+  margin: 1rem auto 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-image: url(/img/greypaper.webp);
+  border: 1px solid var(--border-color-dark);
+  border-radius: var(--border-radius);
+  font: var(--link-font) var(--cta-text-size);
+}
+
+.news-articles {
+  background-image: url(/img/greypaper.webp);
+  background-size: 100%;
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+}

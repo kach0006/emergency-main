@@ -12,11 +12,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
 
-    <link rel="stylesheet" href="css/custom.css" />
+    <link id="lightmode" rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <link rel="stylesheet" href="css/colorMode.css">
 
     <title>Forside</title>
   </head>
@@ -33,7 +35,7 @@
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Dæmonisk besættelse</a></li>
-          <li><a class="menuItem" href="register.html">Eksorcisme</a></li>
+          <li><a class="menuItem" href="register.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -49,7 +51,8 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="/img/infographic_face.webp" alt="Skrækslagent ansigt" />
+          <div id="card1" class="zoomInAnimation"></div>
+
           <div class="daily_text">
             <h2>Sådan ved du, at han er besat</h2>
             <p>Her er tegnene, der afslører, at du deler din kæreste med en dæmon.</p>
@@ -57,38 +60,109 @@
           </div>
         </article>
         <article class="daily_card">
-          <img src="img/ghost_no.webp" alt="teaser_img" />
+          <div id="card2" class="degAnimation"></div>
+          <!--  <img src="img/ghost_no.webp" alt="teaser_img" />  -->
           <div class="daily_text">
             <h2>Rådgivning eller hjemmeeksorcisme?</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea,
               sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="" class="cta_btn">Kontakt os</a>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Dårlig wifi eller hjemsøgt?</h3>
-          <p>Birgitte havde fået forbindelse til mere end internettet...</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-          <dialog id="article_1">
-            <button id="close-button"></button>
+          <h3>Wifi-signalet nåede en ny dimension</h3>
+          <p>
+            Birgitte fik forbindelse til mere end internettet, da hun åbnede en ukendt zip-fil...
+          </p>
+          <img src="img/wifi.webp" alt="news_img" />
+          <button class="open-button" id="open-button1">Læs mere</button>
+          <dialog class="news-articles" id="dialog_1">
+            <article>
+              <img src="img/writteninstars.webp" alt="" />
+              <h3>Hjemsøgt eller dårlig wifi?</h3>
+              <p class="dialog-time">
+                Publiceret <time datetime="2025-04-22">d. 22. april, 2025.</time>
+              </p>
+              <p>
+                Under fuldmånen i sidste uge, kæmpede Birgitte med at gøre sin svigtende
+                internetforbindelse stabil. "Jeg havde downloadet mindst 4 programmer til at hjælpe
+                mig", griner Birgitte og tager en slurk af sin brune urtete, da vi besøger hende i
+                lejligheden på Brønshøj, hvor hun bor med sine 7 hamstere, "jeg er ellers ikke en
+                computerhaj. Og så var han der pludselig - i en lille chat der poppede op på min
+                skærm".
+              </p>
+              <p>
+                Hvad Birgitte ikke vidste var, at hun, i sin søgen efter stærkere wifi-signal, havde
+                fået forbindelse til ånden Magnus. Magnus forklarede i chatten, at han var fanget
+                mellem dimensioner og længe havde ventet på, at en person med den helt rette
+                følsomhed for det overnaturlige ville dukke op. Han hjalp hende med at installere
+                nogle flere programmer på computeren før de sagde farvel. "Vi chattede i timevis.
+                Han var interesseret i alt, jeg havde at sige, lige fra min mors fødeby til mit
+                første kæledyrs navn. Det føltes meget specielt," fortæller Birgitte, som glæder sig
+                til at chatte med Magnus igen.
+              </p>
+              <p>
+                Vi følger historien om Birgitte og Magnus igen i næste måned. Gå ikke glip af
+                opdateringen!
+              </p>
+            </article>
+            <button class="close-button" id="close-button">LUK</button>
           </dialog>
         </article>
         <article class="news_card">
           <h3>Astrologisk hjørne</h3>
           <p>Vi konsulterer stjernerne for at finde svar på dine spørgsmål.</p>
           <img src="img/writteninstars.webp" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="open-button" id="open-button2">Læs mere</button>
+          <dialog class="news-articles" id="dialog_2">
+            <article>
+            <img src="img/writteninstars.webp" alt="" />
+            <h3>Astrologiske hjørne #10</h3>
+            <p>I ugens indlæg forsøger vi at svare på vores seneste læserspørgsmål: <blockquote>"Kan jeg date en Skytte, selvom jeg er født i Krebsens tegn?"</blockquote></p>
+
+
+            <p>Kære forvirrede Krebs,</p>
+              
+            <p>Ja, du kan date en Skytte, selvom du er Krebs, men kun hvis du er klar til at kombinere dine følelsesmæssige rutsjebaneture med hans spontane faldskærmsudspring. Hvor du drømmer om langvarig øjenkontakt over stearinlys og et fælles pensionsopsparingsmøde, drømmer Skytten om at bestige en vulkan og at ignorere dine bekymrede sms'er i en uge.</p>
+              
+            <p> Det er det klassiske møde mellem “jeg har brug for tryghed” og “jeg har booket envejsbillet til Rusland.” Men hey – modsætninger tiltrækker, ikke? Du kan lære at give lidt slip, og Skytten kan måske opdage, at det ikke er en dødsdom at spise det samme to dage i træk.</p>
+              
+            <p> Du skal dog være forberedt på, at dine spørgsmål om de dybere ting i livet kan blive mødt med et “Skal vi ikke bare tage det, som det kommer?”, og at din “hvor er vi på vej hen?”-snak bliver tolket som et geografisk spørgsmål.</p>
+              
+            <p> Held og lykke!</p>
+              
+            <p> - Astrologisk hjørne</p>
+            <button class="close-button" id="close-button">Luk</button>
+          </article>
+          </dialog>
         </article>
         <article class="news_card">
+          
           <h3>Ghostet af en ånd</h3>
-          <p>"Pludselig blev Oujia-brættet helt stille," fortæller Pernille om sin...</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>"Jeg savner vores lange samtaler om mit liv," fortæller Pernille, som mistede kontakt til ånden Gertrud i februar.</p>
+          <img src="/img/ouija.webp" alt="news_img" />
+          <button class="open-button" id="open-button3">Læs mere</button>
+          <dialog class="news-articles" id="dialog_3">
+            <article>
+            <img src="img/ouija.webp" alt="" />
+            <h3>Pernille blev ghostet af en ånd</h3>
+            <p>Indtil for nylig havde Pernille det, de fleste af os drømmer om: en nær veninde, som altid stod klar til at lytte og give gode råd. I 2019 mødte Pernille nemlig Gertrud, da hun kontaktede åndeverdenen gennem sit Oija-board.</p>
+
+             <p>"Jeg følte, at jeg kunne snakke med hende om alt", fortæller Pernille om den første tid med Gertrud, da vi møder hende hjemme i stuen. "Hver uge satte jeg mig til rette, dæmpede lysene, og ventede på Gertruds svar."</p>
+              
+             <p>Gertrud var tålmodig. Kærlighedsproblemer? Gertrud havde gode råd. Sur på kollegaen? Gertrud havde løsningen. Med tiden begyndte sessionerne at omhandle alt fra dagens aftensmad til Pernilles komplicerede forhold til sin mor. Vi spurgte Pernille, hvad hun egentlig ved om Gertrud efter seks års venskab, hvortil hun reflekterede: "Det nåede vi aldrig rigtig til... der skete jo så meget i mit liv dengang." </p> 
+              
+              
+             <p> I vinteren 2025 skete der en forandring i Pernille og Gertruds relation. "Uanset hvad jeg spurgte om, så svarede Gertrud med den samme talkombination" fortæller Pernille, som til sidst googlede tallene. "Det var et telefonnummer til en psykolog i mit nærområde. Det var meget mærkeligt." Og så skete det, der ikke måtte ske: En aften i februar holdt Gertrud op med at svare Pernille.</p>
+              
+             <p> "Hun har ghostet mig i to måneder," Pernille kigger fortvivlet på sit Oija-board. "Først troede jeg, at der var noget galt med Oija-boardet, så jeg købte et nyt." Hun fortæller, at det sværeste har været manglen på klarhed omkring Gertruds beslutning om at afslutte kontakten. Vi spurgte Pernille, om hun vil fortsætte med, at række ud til Gertrud i håb om svar: "Måske. Jeg savner vores lange samtaler om mit liv, men Gertrud har virkelig såret mig, så det vil tage hende tid at genvinde min tillid." </p>
+            <button class="close-button" id="close-button">Luk</button>
+          </article>
+          </dialog>
         </article>
       </section>
     </main>
@@ -118,6 +192,11 @@
           <li><a href="">link</a></li>
         </ul>
       </nav>
+      <label class="switch">
+<input type="checkbox" id="colorMode">
+      <span class="slider"></span>
+    </label>
     </footer>
+    <script src="js/dialog.js"></script>
   </body>
 </html>
