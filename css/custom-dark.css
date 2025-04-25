@@ -1,7 +1,7 @@
 :root {
   /* Colours */
-  --primary-bg-color: #f2f2f2; /* used */
-  --primary-font-color: #f2f2f2; /* used */
+  --primary-bg-color: rgba(248, 248, 248, 0.8); /* used */
+  --primary-font-color: #f8f8f8; /* used */
 
   --secondary-bg-color: #5d656c; /* used */
   --secondary-font-color: #d5e5f4; /* used */
@@ -21,6 +21,7 @@
   --border-color-dark: #0d0d0d;
   --border-radius: 0.25rem;
   --big-border-radius: 1rem;
+  --form-border: #f8f8f8;
 
   /* Links */
   --link-color: #84888e; /* used */
@@ -49,15 +50,16 @@
   --followup-text-size: 0.8rem;
   --form-submit-size: 1rem;
   --secondary-headline-size: 1.5rem;
+  --form-submit-text-color: rgba(255, 255, 127, 1);
 
   /* Text colors */
   --logotype-color: #ec2b8c;
   --headline-color: #bbc3ca;
-  --headline-color-inverted: rgba(255, 255, 127, 0.8);
+  --headline-color-inverted: rgba(255, 255, 127, 1);
   --bodytext-color: #575c61;
   --bodytext-color-inverted: #f8f8f8;
   --cta-text-color: #bbc3ca;
-  --cta-text-color-inverted: #bbc3ca;
+  --cta-text-color-inverted: #f8f8f8;
   --followup-text-color: #0d0d0d;
   --followup-text-color-inverted: #bbc3ca;
   --formfield-text-color: #575c61;
@@ -65,13 +67,13 @@
   --form-submit-color-inverted: #bbc3ca;
 
   /* Background colors */
-  --logotype-background-color: rgba(255, 255, 127, 0.8);
-  --header-background-color: #575757;
+  --logotype-background-color: rgba(255, 255, 127, 0.9);
+  --header-background-color: rgba(87, 87, 87, 1);
   --disclamer-background-color: #0d0d0d;
   --article-background-color: #0d0d0d;
   --news-background-color: rgba(255, 255, 127, 0.3);
   --news-background-color-inverted: rgba(255, 255, 127, 0.9);
-  --info-background-color: #f8f8f8;
+  --info-background-color: #0d0d0d;
   --headline-bg-color: #dbdde3;
   --headline-bg-color-alert: #0d0d0d;
   --headline-bg-color-inverted: rgba(236, 43, 140, 0.8);
@@ -79,24 +81,30 @@
   --bodytext-bg-color-inverted: #dbdde3;
   --cta-text-bg-color: #dbdde3;
   --cta-text-bg-color-inverted: #dbdde3;
-  --followup-text-bg-color: rgba(255, 255, 127, 0.8);
+  --followup-text-bg-color: rgba(255, 255, 127, 0.9);
   --followup-text-bg-color-inverted: #dbdde3;
-  --form-background-color: #f8f8f8;
+  --form-background-color: rgba(87, 87, 87, 0.5);
   --form-text-color: #dbdde3;
   --formfield-background-color: #dbdde3;
   --formfield-background-color-active: #dbdde3;
-  --form-submit-bg-color: #dbdde3;
+  --form-submit-bg-color: #575757;
+  --form-submit-border: rgba(255, 255, 127, 0.9);
   --form-submit-bg-color-inverted: #dbdde3;
   --form-button-bg: #00ff00;
   --form-button-text-color: #0d0d0d;
   --form-hover-bg: #575757;
+  --form-headline-color: rgba(255, 255, 127, 1);
   --form-hover-button-text-color: #00ff00;
   --news-button-bg-color: #575757;
   --news-button-text-color: #f8f8f8;
 
   /* Info-boxes */
   --info-bg-color-yellow: #575757;
-  --info-bg-color-green: #0d0d0d;
+  --info-bg-color-green: rgba(236, 43, 140, 0.6);
 
   --body-background-image: url(/img/darkpaper@2x.webp);
+
+  /*Checkbox*/
+  --checkbox-background: rgba(255, 255, 127, 0.9);
+  --slider-color: #0d0d0d;
 }

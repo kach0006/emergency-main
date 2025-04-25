@@ -20,6 +20,7 @@ dialog {
   font-family: var(--body-font);
   border: 1rem solid var(--border-color-light);
   border-radius: var(--big-border-radius);
+  color: var(--primary-font-color);
 }
 
 dialog article {
@@ -31,34 +32,59 @@ dialog time {
   padding-bottom: 1rem;
 }
 
+dialog h3 {
+  font-size: var(--headline2-size);
+  border-bottom: 1px solid var(--border-color);
+}
+
 dialog::backdrop {
   backdrop-filter: blur(2px) grayscale(60%);
 }
 
 dialog img {
-  width: 100px;
-  float: left;
-  padding: 0 2rem 2rem 0;
+  float: right;
+  padding: 1rem 1rem 1rem 2rem;
 }
 
 dialog .close-button {
   display: block;
   margin: 1rem auto 2rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   text-align: center;
-  background-image: url(/img/greypaper.webp);
-  border: 1px solid var(--border-color-dark);
+  color: var(--form-submit-text-color);
+  font-family: var(--link-font);
+  font-size: var(--default-font-size);
+  background-color: var(--form-submit-bg-color);
+  border-color: var(--form-submit-border);
+
   border-radius: var(--border-radius);
-  font: var(--link-font) var(--cta-text-size);
+}
+
+dialog .close-button:hover {
+  cursor: pointer;
+  background-color: var(--form-hover-bg);
+  color: var(--form-hover-button-text-color);
+  transition-duration: 1s;
 }
 
 .news-articles {
-  background-image: url(/img/greypaper.webp);
+  background-image: var(--body-background-image);
   background-size: 100%;
 }
 
+.dialog-time {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: var(--headline-font);
+  font-size: var(--followup-text-size);
+  border-bottom: 1px solid var(--border-color);
+}
+.signature,
 blockquote {
-  font-style: italic;
-  text-align: center;
-  padding: 1rem;
+  font-family: var(--secondary-headline-font);
+  font-size: var(--headline3-size);
+}
+
+h3 span {
+  color: var(--dialog-headline);
 }

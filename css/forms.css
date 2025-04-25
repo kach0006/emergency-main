@@ -5,7 +5,7 @@
 }
 
 #form-section h3 {
-  color: var(--headline-bg-color-inverted);
+  color: var(--form-headline-color);
 }
 
 #form-section h3:not(:first-of-type) {
@@ -13,8 +13,8 @@
 }
 
 #webform {
-  background-color: white;
-  border: 1px solid #ffff7f;
+  background-color: var(--form-background-color);
+  border: 1px solid var(--form-border);
   margin: 1rem;
   padding: 1rem;
 }
@@ -76,17 +76,17 @@ textarea {
 }
 
 .star {
-  color: var(--headline-bg-color-inverted);
+  color: var(--form-headline-color);
 }
 
 #form-button {
   display: block;
   text-decoration: none;
-  color: var(--form-button-text-color);
+  color: var(--form-submit-text-color);
   font-family: var(--link-font);
   font-size: var(--default-font-size);
-  background-color: var(--form-button-bg);
-  border-color: #ffff7f;
+  background-color: var(--form-submit-bg-color);
+  border-color: var(--form-submit-border);
   padding: 1rem 1.5rem;
   border-radius: var(--border-radius);
 }

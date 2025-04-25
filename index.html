@@ -33,6 +33,10 @@
               alt="Okkultiveret Univers logo"
           /></a>
         </div>
+        <label class="switch">
+          <input type="checkbox" id="colorMode">
+                <span class="slider"></span>
+              </label>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Dæmonisk besættelse</a></li>
           <li><a class="menuItem" href="register.html">Kontakt</a></li>
@@ -56,7 +60,7 @@
           <div class="daily_text">
             <h2>Sådan ved du, at han er besat</h2>
             <p>Her er tegnene, der afslører, at du deler din kæreste med en dæmon.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="instruction.html" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
@@ -65,10 +69,9 @@
           <div class="daily_text">
             <h2>Rådgivning eller hjemmeeksorcisme?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea,
-              sed minima asperiores.
+              Vores dæmoneksperter sidder klar til at hjælpe dig. Kontakt os for rådgivning og besøg efter aftale.
             </p>
-            <a href="" class="cta_btn">Kontakt os</a>
+            <a href="register.html" class="cta_btn">Kontakt os</a>
           </div>
         </article>
       </section>
@@ -82,15 +85,14 @@
           <button class="open-button" id="open-button1">Læs mere</button>
           <dialog class="news-articles" id="dialog_1">
             <article>
-              <img src="img/writteninstars.webp" alt="" />
-              <h3>Hjemsøgt eller dårlig wifi?</h3>
+              <h3>Wifi-signalet nåede en ny dimension</h3>
               <p class="dialog-time">
-                Publiceret <time datetime="2025-04-22">d. 22. april, 2025.</time>
+                Publiceret <time datetime="2025-04-22">d. 22. april, 2025</time>
               </p>
+              <img src="img/wifi.webp" alt="" />
               <p>
                 Under fuldmånen i sidste uge, kæmpede Birgitte med at gøre sin svigtende
-                internetforbindelse stabil. "Jeg havde downloadet mindst 4 programmer til at hjælpe
-                mig", griner Birgitte og tager en slurk af sin brune urtete, da vi besøger hende i
+                internetforbindelse stabil. "Jeg havde downloadet mindst 4 programmer for at løse det", griner Birgitte og tager en slurk af sin brune urtete, da vi besøger hende i
                 lejligheden på Brønshøj, hvor hun bor med sine 7 hamstere, "jeg er ellers ikke en
                 computerhaj. Og så var han der pludselig - i en lille chat der poppede op på min
                 skærm".
@@ -105,24 +107,27 @@
                 første kæledyrs navn. Det føltes meget specielt," fortæller Birgitte, som glæder sig
                 til at chatte med Magnus igen.
               </p>
-              <p>
+              <p class="signature">
                 Vi følger historien om Birgitte og Magnus igen i næste måned. Gå ikke glip af
                 opdateringen!
               </p>
             </article>
-            <button class="close-button" id="close-button">LUK</button>
+            <button class="close-button" id="close-button">Luk</button>
           </dialog>
         </article>
         <article class="news_card">
           <h3>Astrologisk hjørne</h3>
-          <p>Vi konsulterer stjernerne for at finde svar på dine spørgsmål.</p>
+          <p>Brevkassen hvor vi konsulterer stjernerne for at finde svar på dine spørgsmål.</p>
           <img src="img/writteninstars.webp" alt="news_img" />
           <button class="open-button" id="open-button2">Læs mere</button>
           <dialog class="news-articles" id="dialog_2">
             <article>
-            <img src="img/writteninstars.webp" alt="" />
-            <h3>Astrologiske hjørne #10</h3>
-            <p>I ugens indlæg forsøger vi at svare på vores seneste læserspørgsmål: <blockquote>"Kan jeg date en Skytte, selvom jeg er født i Krebsens tegn?"</blockquote></p>
+              <h3><span>Astrologisk hjørne #10</span></h3>
+              <p class="dialog-time">
+                Publiceret <time datetime="2025-04-22">d. 22. april, 2025</time>
+              </p>
+              <img src="img/writteninstars.webp" alt="" />
+            <p>I ugens indlæg lovede vi at svare på et af livets helt store spørgsmål, men stjernebilledet var noget uklart. Derfor besvarer vi i dag et helt andet spørgsmål: <blockquote>"Kan jeg date en Skytte, selvom jeg er født i Krebsens tegn?"</blockquote></p>
 
 
             <p>Kære forvirrede Krebs,</p>
@@ -135,7 +140,7 @@
               
             <p> Held og lykke!</p>
               
-            <p> - Astrologisk hjørne</p>
+            <p class="signature"> - Astrologisk hjørne</p>
             <button class="close-button" id="close-button">Luk</button>
           </article>
           </dialog>
@@ -148,8 +153,11 @@
           <button class="open-button" id="open-button3">Læs mere</button>
           <dialog class="news-articles" id="dialog_3">
             <article>
-            <img src="img/ouija.webp" alt="" />
-            <h3>Pernille blev ghostet af en ånd</h3>
+              <h3>Pernille blev ghostet af en ånd</h3>
+              <p class="dialog-time">
+                Publiceret <time datetime="2025-04-22">d. 22. april, 2025</time>
+              </p>
+              <img src="img/ouija.webp" alt="" />
             <p>Indtil for nylig havde Pernille det, de fleste af os drømmer om: en nær veninde, som altid stod klar til at lytte og give gode råd. I 2019 mødte Pernille nemlig Gertrud, da hun kontaktede åndeverdenen gennem sit Oija-board.</p>
 
              <p>"Jeg følte, at jeg kunne snakke med hende om alt", fortæller Pernille om den første tid med Gertrud, da vi møder hende hjemme i stuen. "Hver uge satte jeg mig til rette, dæmpede lysene, og ventede på Gertruds svar."</p>
@@ -192,10 +200,7 @@
           <li><a href="">link</a></li>
         </ul>
       </nav>
-      <label class="switch">
-<input type="checkbox" id="colorMode">
-      <span class="slider"></span>
-    </label>
+      
     </footer>
     <script src="js/dialog.js"></script>
   </body>

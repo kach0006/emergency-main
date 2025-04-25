@@ -77,3 +77,20 @@ function mouseOut() {
   document.querySelector(".placeholder").innerHTML =
     "Er din kæreste blevet besat af en dæmon? I en rundspørge blandt medlemmer af Okkultiveret Univers gættede mindst én på, at dæmonisk besættelse rammer flere husstande, end man skulle tro.<br> <br> Vi har samlet de tre mest almindelige tegn på, at din kæreste er offer for en dæmonisk besættelse, så du kan danne dig et overblik.<br> <br> Klik eller hold musen over tallene for at læse mere.";
 }*/
+
+const css = document.querySelector("#lightmode");
+console.log(css);
+
+const modeButton = document.querySelector("#colorMode");
+
+modeButton.addEventListener("click", changeMode);
+
+function changeMode() {
+  if (css.href.includes("dark")) {
+    css.href = "css/custom.css";
+    console.log("change to darkmode");
+  } else {
+    css.href = "css/custom-dark.css";
+    console.log("change to lightmode");
+  }
+}

@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --primary-bg-color: #f2f2f2; /* used */
+  --primary-bg-color: rgba(248, 248, 248, 0.8); /* used */
   --primary-font-color: #0d0d0d; /* used */
 
   --secondary-bg-color: #5d656c; /* used */
@@ -21,6 +21,7 @@
   --border-color-dark: #0d0d0d;
   --border-radius: 0.25rem;
   --big-border-radius: 1rem;
+  --form-border: rgba(87, 87, 87, 0.5);
 
   /* Links */
   --link-color: #84888e; /* used */
@@ -63,8 +64,11 @@
   --formfield-text-color: #575c61;
   --form-submit-color: #bbc3ca;
   --form-submit-color-inverted: #bbc3ca;
+  --form-submit-text-color: #0d0d0d;
+  --dialog-headline: #ec2b8c;
 
   /* Background colors */
+  --dialog-headline-bg: #575757;
   --logotype-background-color: #ffff7f;
   --header-background-color: #575757;
   --disclamer-background-color: #0d0d0d;
@@ -85,12 +89,14 @@
   --form-text-color: #dbdde3;
   --formfield-background-color: #dbdde3;
   --formfield-background-color-active: #dbdde3;
-  --form-submit-bg-color: #dbdde3;
+  --form-submit-bg-color: transparent;
+  --form-submit-border: #00ff00;
   --form-submit-bg-color-inverted: #dbdde3;
   --form-button-bg: #00ff00;
   --form-button-text-color: #0d0d0d;
   --form-hover-bg: #575757;
-  --form-hover-button-text-color: #00ff00;
+  --form-hover-button-text-color: #ffff7f;
+  --form-headline-color: #ec2b8c;
   --news-button-bg-color: #575757;
   --news-button-text-color: #f8f8f8;
 
@@ -98,5 +104,10 @@
   --info-bg-color-yellow: #575757;
   --info-bg-color-green: #0d0d0d;
 
+  /* Background images */
   --body-background-image: url(/img/greypaper.webp);
+
+  /*Checkbox*/
+  --checkbox-background: #ffff7f;
+  --slider-color: #0d0d0d;
 }

@@ -82,3 +82,20 @@ function resetSummary() {
   inputSummary.style.display = "none";
   document.querySelector("#webform").reset();
 }
+
+const css = document.querySelector("#lightmode");
+console.log(css);
+
+const modeButton = document.querySelector("#colorMode");
+
+modeButton.addEventListener("click", changeMode);
+
+function changeMode() {
+  if (css.href.includes("dark")) {
+    css.href = "css/custom.css";
+    console.log("change to darkmode");
+  } else {
+    css.href = "css/custom-dark.css";
+    console.log("change to lightmode");
+  }
+}
