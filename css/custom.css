@@ -105,7 +105,7 @@
   --info-bg-color-green: #0d0d0d;
 
   /* Background images */
-  --body-background-image: url(/img/greypaper.webp);
+  --body-background-image: url(../img/greypaper.webp);
 
   /*Checkbox*/
   --checkbox-background: #ffff7f;

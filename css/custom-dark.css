@@ -102,7 +102,7 @@
   --info-bg-color-yellow: #575757;
   --info-bg-color-green: rgba(236, 43, 140, 0.6);
 
-  --body-background-image: url(/img/darkpaper@2x.webp);
+  --body-background-image: url(../img/darkpaper@2x.webp);
 
   /*Checkbox*/
   --checkbox-background: rgba(255, 255, 127, 0.9);
